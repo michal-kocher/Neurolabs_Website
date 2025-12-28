@@ -4,6 +4,9 @@ import KNN from './pages/KNN';
 import Regression from './pages/Regression';
 import Music from './pages/Music';
 import Pong from './pages/Pong';
+import TechStack from './pages/TechStack';
+import Contact from './pages/Contact';
+import AgentAI from './pages/AgentAI';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/regression" element={<Regression />} />
         <Route path="/music" element={<Music />} />
         <Route path="/pong" element={<Pong />} />
+        <Route path="/tech-stack" element={<TechStack />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/agent" element={<AgentAI />} />
       </Routes>
     </Router>
   );

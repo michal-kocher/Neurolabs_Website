@@ -30,9 +30,11 @@ const Regression = () => {
                 Liniowa.
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-400 max-w-xl leading-tight mb-4 border-l-2 border-[#8E05C2] pl-4 lg:pl-6 line-clamp-3">
-              Algorytm <strong>Gradient Descent</strong> znajduje optymalne parametry linii prostej, minimalizując błąd średniokwadratowy między przewidywaniami a rzeczywistymi wartościami. Wizualizacja pokazuje proces uczenia w czasie rzeczywistym - obserwuj, jak linia dopasowuje się do danych wraz z każdą iteracją.
-            </p>
+            <div className="text-lg sm:text-xl text-gray-400 max-w-xl leading-tight mb-4 border-l-2 border-[#8E05C2] pl-4 lg:pl-6 max-h-[120px] overflow-y-auto pr-2 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#8E05C2]/20 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#8E05C2]/40">
+              <p>
+                Algorytm <strong>Gradient Descent</strong> znajduje optymalne parametry linii prostej, minimalizując błąd średniokwadratowy między przewidywaniami a rzeczywistymi wartościami. Wizualizacja pokazuje proces uczenia w czasie rzeczywistym - obserwuj, jak linia dopasowuje się do danych wraz z każdą iteracją.
+              </p>
+            </div>
             <div className="flex flex-wrap gap-2 lg:gap-3">
               <Link to="/music" className="px-6 lg:px-8 py-3 lg:py-4 bg-[#8E05C2] rounded-full font-black hover:bg-[#700B97] transition-all flex items-center gap-2 uppercase text-xs tracking-widest shadow-[0_0_40px_rgba(142,5,194,0.3)] group">
                 Ewolucja <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />

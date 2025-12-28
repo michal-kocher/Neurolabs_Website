@@ -278,9 +278,9 @@ const AgentAI = () => {
                 {currentTitle}
               </span>
             </h1>
-            <p className={`${currentDescriptionSize} text-gray-400 max-w-xl leading-tight mb-4 border-l-2 ${currentBorderColor} pl-4 lg:pl-6 line-clamp-3`}>
-              {currentDescription}
-            </p>
+            <div className={`${currentDescriptionSize} text-gray-400 max-w-xl leading-tight mb-4 border-l-2 ${currentBorderColor} pl-4 lg:pl-6 max-h-[120px] overflow-y-auto pr-2 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#8E05C2]/20 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#8E05C2]/40`}>
+              <p>{currentDescription}</p>
+            </div>
             <div className="flex flex-wrap gap-2 lg:gap-3">
               <Link to="/knn" className={`px-6 lg:px-8 py-3 lg:py-4 ${currentButton1Color} rounded-full font-black transition-all flex items-center gap-2 uppercase text-xs tracking-widest shadow-[0_0_40px_rgba(142,5,194,0.3)] group`}>
                 {currentButton1Text} <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />

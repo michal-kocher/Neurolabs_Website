@@ -7,7 +7,7 @@ import Pong from './pages/Pong';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Neurolabs_Website">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/knn" element={<KNN />} />
